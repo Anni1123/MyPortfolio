@@ -2,137 +2,297 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anni Kumari | Software Engineer II</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anni Kumari | Software Engineer II</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">Anni.</div>
-        <ul class="nav-links">
-            <li><a href="#tabs">About</a></li>
-            <li><a href="#tabs">Experience</a></li>
-            <li><a href="#tabs">Projects</a></li>
-            <li><a href="#tabs">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- NAVBAR -->
+  <header class="header">
+    <nav class="navbar container" aria-label="Primary">
+      <a class="logo" href="#top" aria-label="Go to top">Anni<span>.</span></a>
 
-    <!-- HERO -->
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" data-nav>
+        <li><a href="#tabs" data-tab-link="about">About</a></li>
+        <li><a href="#tabs" data-tab-link="experience">Experience</a></li>
+        <li><a href="#tabs" data-tab-link="projects">Projects</a></li>
+        <li><a href="#tabs" data-tab-link="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main id="top">
     <section class="hero">
-        <h1>Hi, I'm <span class="highlight">Anni Kumari</span></h1>
-        <p>Software Engineer II @ Microsoft • Backend • Distributed Systems • Cloud</p>
-        <a href="#tabs" class="btn">Explore Portfolio</a>
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="eyebrow">Software Engineer II • Microsoft</p>
+          <h1>
+            Hi, I’m <span class="gradient-text">Anni Kumari</span>.
+          </h1>
+
+          <p class="subtitle">
+            I build secure, scalable backend systems and cloud-native services.
+            I care deeply about reliability, performance, and developer productivity.
+          </p>
+
+          <div class="pill-row" aria-label="Key areas">
+            <span class="pill">Backend</span>
+            <span class="pill">Distributed Systems</span>
+            <span class="pill">Azure</span>
+            <span class="pill">ARM64/ARM64EC</span>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#tabs">Explore Portfolio</a>
+            <a class="btn ghost" href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="hero-right" aria-hidden="true">
+          <div class="profile-card">
+            <div class="profile-top">
+              <div class="avatar">AK</div>
+              <div class="profile-meta">
+                <div class="name">Anni Kumari</div>
+                <div class="role">Software Engineer II</div>
+              </div>
+            </div>
+
+            <div class="profile-stats">
+              <div class="stat">
+                <div class="stat-num">3+ yrs</div>
+                <div class="stat-label">Experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">Cloud</div>
+                <div class="stat-label">Backend focus</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">Scale</div>
+                <div class="stat-label">Perf + Reliability</div>
+              </div>
+            </div>
+
+            <div class="profile-actions">
+              <a class="mini-link" href="https://github.com/Anni1123" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="mini-link" href="https://www.linkedin.com/in/anni-kumari-588508188/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- TABS WRAPPER -->
     <section id="tabs" class="tabs-section">
+      <div class="container">
+        <div class="tabs-header">
+          <h2 class="section-title">Portfolio</h2>
+          <p class="section-subtitle">A snapshot of my work, impact, and projects.</p>
+        </div>
 
         <!-- Tab Buttons -->
-        <div class="tabs">
-            <button class="tab active" data-tab="about">About</button>
-            <button class="tab" data-tab="experience">Experience</button>
-            <button class="tab" data-tab="projects">Projects</button>
-            <button class="tab" data-tab="contact">Contact</button>
+        <div class="tabs" role="tablist" aria-label="Portfolio tabs">
+          <button class="tab active" role="tab" aria-selected="true" data-tab="about">About</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="experience">Experience</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="projects">Projects</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="contact">Contact</button>
         </div>
 
         <!-- TAB CONTENT -->
-        <div class="tab-content">
+        <div class="tab-content surface">
 
-            <!-- ABOUT -->
-            <div id="about" class="content active">
-                <h2>About Me</h2>
-                <p>
-                    I am a Software Engineer II at Microsoft with expertise in building secure, scalable and
-                    high‑performance backend systems.  
-                    I work across cloud-native services, CI/CD, distributed systems, and cross‑architecture
-                    enablement (ARM64/ARM64EC).
-                    <br><br>
-                    I value reliability, performance, and developer productivity — shipping meaningful,
-                    system‑level improvements at scale.
+          <!-- ABOUT -->
+          <div id="about" class="content active" role="tabpanel">
+            <h3>About Me</h3>
+            <p>
+              I’m a Software Engineer II at Microsoft with expertise in building secure, scalable, and high‑performance
+              backend systems.
+              I work across cloud-native services, CI/CD, distributed systems, and cross‑architecture enablement
+              (ARM64/ARM64EC).
+            </p>
+            <p>
+              I value reliability, performance, and developer productivity — shipping meaningful system‑level improvements at scale.
+            </p>
+
+            <div class="highlights">
+              <div class="highlight-card">
+                <h4>Strengths</h4>
+                <ul>
+                  <li>Backend engineering & service reliability</li>
+                  <li>Performance optimization at scale</li>
+                  <li>Security best practices & clean engineering</li>
+                </ul>
+              </div>
+
+              <div class="highlight-card">
+                <h4>Tech Focus</h4>
+                <ul>
+                  <li>Azure / Cloud-native architectures</li>
+                  <li>CI/CD & developer productivity</li>
+                  <li>Distributed systems foundations</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE -->
+          <div id="experience" class="content" role="tabpanel">
+            <h3>Experience</h3>
+
+            <div class="timeline">
+
+              <article class="card">
+                <div class="card-top">
+                  <div>
+                    <h4>Microsoft — Software Engineer II</h4>
+                    <p class="muted">Aug 2025 – Present</p>
+                  </div>
+                  <span class="tag">Impact</span>
+                </div>
+                <ul>
+                  <li>Improved Office Web boot latency by ~200ms for millions of users.</li>
+                  <li>Re‑architected test infrastructure to achieve ~5× faster startup.</li>
+                </ul>
+              </article>
+
+              <article class="card">
+                <div class="card-top">
+                  <div>
+                    <h4>Microsoft — Software Engineer I</h4>
+                    <p class="muted">Aug 2022 – Aug 2025</p>
+                  </div>
+                  <span class="tag">Engineering</span>
+                </div>
+                <ul>
+                  <li>Reduced CI/CD pipeline time by ~60% through automation and optimization.</li>
+                  <li>Led .NET Framework → .NET Core migration for improved performance and maintainability.</li>
+                  <li>Enabled ARM64/ARM64EC across Office components (cross-arch readiness).</li>
+                </ul>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- PROJECTS -->
+          <div id="projects" class="content" role="tabpanel">
+            <h3>Projects</h3>
+
+            <div class="project-grid">
+
+              <a class="p-card" href="https://marketplace.visualstudio.com/items?itemName=WESTDevX.wactrack-mcp-server"
+                target="_blank" rel="noreferrer">
+                <div class="p-top">
+                  <h4>WacTrack MCP Server</h4>
+                  <span class="chip">VS Code</span>
+                </div>
+                <p>VS Code extension enabling structured tooling integration.</p>
+                <span class="p-link">Open →</span>
+              </a>
+
+              <a class="p-card" href="https://github.com/gdscnitp/freshers-portal-app" target="_blank" rel="noreferrer">
+                <div class="p-top">
+                  <h4>Student–Alumni Portal</h4>
+                  <span class="chip">Full‑stack</span>
+                </div>
+                <p>Full‑stack Q&amp;A platform for 500+ users.</p>
+                <span class="p-link">GitHub →</span>
+              </a>
+
+              <a class="p-card" href="https://github.com/Anni1123/SocialMediaApp" target="_blank" rel="noreferrer">
+                <div class="p-top">
+                  <h4>Social Media App</h4>
+                  <span class="chip">Android</span>
+                </div>
+                <p>Android app with real‑time messaging &amp; authentication.</p>
+                <span class="p-link">GitHub →</span>
+              </a>
+
+              <a class="p-card" href="https://github.com/Anni1123/ToDoApp" target="_blank" rel="noreferrer">
+                <div class="p-top">
+                  <h4>To‑Do App</h4>
+                  <span class="chip">Frontend</span>
+                </div>
+                <p>Simple task manager with local storage.</p>
+                <span class="p-link">GitHub →</span>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- CONTACT -->
+          <div id="contact" class="content" role="tabpanel">
+            <h3>Contact</h3>
+
+            <div class="contact-grid">
+              <div class="contact-card">
+                <h4>Email</h4>
+                <p><a href="mailto:annik.ug18.cs@nitp.ac.in">annik.ug18.cs@nitp.ac.in</a></p>
+              </div>
+
+              <div class="contact-card">
+                <h4>Links</h4>
+                <p class="link-row">
+                  <a href="https://www.linkedin.com/in/anni-kumari-588508188/" target="_blank" rel="noreferrer">LinkedIn</a>
+                  <span>•</span>
+                  <a href="https://github.com/Anni1123" target="_blank" rel="noreferrer">GitHub</a>
                 </p>
+              </div>
             </div>
-
-            <!-- EXPERIENCE -->
-            <div id="experience" class="content">
-                <h2>Experience</h2>
-
-                <div class="card">
-                    <h3>Microsoft — Software Engineer II</h3>
-                    <p class="duration">Aug 2025 – Present</p>
-                    <ul>
-                        <li>Improved Office Web boot latency by ~200ms for millions of users.</li>
-                        <li>Re‑architected test infra → 5× faster startup.</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h3>Microsoft — Software Engineer I</h3>
-                    <p class="duration">Aug 2022 – Aug 2025</p>
-                    <ul>
-                        <li>Reduced CI/CD pipeline time by ~60%.</li>
-                        <li>Led .NET Framework → .NET Core migration.</li>
-                        <li>Enabled ARM64/ARM64EC across Office components.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- PROJECTS -->
-            <div id="projects" class="content">
-                <h2>Projects</h2>
-
-                <div class="project-list">
-
-                    <div class="p-card">
-                        <h3>WacTrack MCP Server</h3>
-                        <p>VS Code extension enabling structured tooling integration.</p>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=WESTDevX.wactrack-mcp-server"
-                            target="_blank">View</a>
-                    </div>
-
-                    <div class="p-card">
-                        <h3>Student–Alumni Portal</h3>
-                        <p>Full‑stack Q&A platform for 500+ users.</p>
-                        <a href="https://github.com/gdscnitp/freshers-portal-app" target="_blank">GitHub</a>
-                    </div>
-
-                    <div class="p-card">
-                        <h3>Social Media App</h3>
-                        <p>Android app with real‑time messaging & authentication.</p>
-                        <a href="https://github.com/Anni1123/SocialMediaApp" target="_blank">GitHub</a>
-                    </div>
-
-                    <div class="p-card">
-                        <h3>To‑Do App</h3>
-                        <p>Simple task manager with local storage.</p>
-                        <a href="https://github.com/Anni1123/ToDoApp" target="_blank">GitHub</a>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- CONTACT -->
-            <div id="contact" class="content">
-                <h2>Contact</h2>
-                <p>Email: <a href="mailto:annik.ug18.cs@nitp.ac.in">annik.ug18.cs@nitp.ac.in</a></p>
-                <p>
-                    <a href="https://www.linkedin.com/in/anni-kumari-588508188/" target="_blank">LinkedIn</a> •
-                    <a href="https://github.com/Anni1123" target="_blank">GitHub</a>
-                </p>
-            </div>
+          </div>
 
         </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
+      <div class="container footer-inner">
         <p>© 2026 Anni Kumari</p>
+        <p class="muted">Built with HTML + CSS</p>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
+  </main>
 
+  <script>
+    // Tabs
+    const tabs = document.querySelectorAll(".tab");
+    const contents = document.querySelectorAll(".content");
+
+    function activateTab(tabName) {
+      tabs.forEach(t => {
+        const active = t.dataset.tab === tabName;
+        t.classList.toggle("active", active);
+        t.setAttribute("aria-selected", active ? "true" : "false");
+      });
+      contents.forEach(c => c.classList.toggle("active", c.id === tabName));
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => activateTab(tab.dataset.tab));
+    });
+
+    // Navbar mobile toggle
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector("[data-nav]");
+    toggle.addEventListener("click", () => {
+      const open = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+
+    // Navbar links -> open correct tab
+    document.querySelectorAll("[data-tab-link]").forEach(link => {
+      link.addEventListener("click", () => activateTab(link.dataset.tabLink));
+    });
+  </script>
 </body>
+
 </html>

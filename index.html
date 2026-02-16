@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,116 +9,130 @@
 </head>
 
 <body>
+
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">Anni.</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+        <div class="logo">Anni.</div>
+        <ul class="nav-links">
+            <li><a href="#tabs">About</a></li>
+            <li><a href="#tabs">Experience</a></li>
+            <li><a href="#tabs">Projects</a></li>
+            <li><a href="#tabs">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span>Anni Kumari</span></h1>
-            <p>Software Engineer II at Microsoft • Backend • Distributed Systems • Cloud • Performance</p>
-            <a href="#projects" class="btn">Explore My Work</a>
-        </div>
+        <h1>Hi, I'm <span class="highlight">Anni Kumari</span></h1>
+        <p>Software Engineer II @ Microsoft • Backend • Distributed Systems • Cloud</p>
+        <a href="#tabs" class="btn">Explore Portfolio</a>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="section">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-text">
-            I am a Software Engineer II at Microsoft with experience building secure, scalable, and 
-            high‑performance backend systems. My work spans cloud-native services, CI/CD infrastructure, 
-            distributed systems, and cross‑architecture enablement (ARM64/ARM64EC).
-            <br><br>
-            I care deeply about reliability, performance, and developer productivity — shipping meaningful 
-            improvements across large-scale engineering environments.
-        </p>
-    </section>
+    <!-- TABS WRAPPER -->
+    <section id="tabs" class="tabs-section">
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-        <h2 class="section-title">Experience</h2>
-
-        <div class="exp-card">
-            <h3>Microsoft — Software Engineer II</h3>
-            <p class="exp-duration">Aug 2025 – Present</p>
-            <ul>
-                <li>Optimized Office Web boot latency by ~200ms for millions of users.</li>
-                <li>Re‑architected test infrastructure, improving startup time by 5×.</li>
-            </ul>
+        <!-- Tab Buttons -->
+        <div class="tabs">
+            <button class="tab active" data-tab="about">About</button>
+            <button class="tab" data-tab="experience">Experience</button>
+            <button class="tab" data-tab="projects">Projects</button>
+            <button class="tab" data-tab="contact">Contact</button>
         </div>
 
-        <div class="exp-card">
-            <h3>Microsoft — Software Engineer I</h3>
-            <p class="exp-duration">Aug 2022 – Aug 2025</p>
-            <ul>
-                <li>Eliminated CI/CD bottlenecks, reducing build time by ~60%.</li>
-                <li>Led .NET Framework → .NET Core migration.</li>
-                <li>Enabled ARM64/ARM64EC for Office components.</li>
-            </ul>
-        </div>
-    </section>
+        <!-- TAB CONTENT -->
+        <div class="tab-content">
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-        <h2 class="section-title">Projects</h2>
-
-        <div class="project-grid">
-
-            <div class="project-card">
-                <h3>WacTrack MCP Server</h3>
+            <!-- ABOUT -->
+            <div id="about" class="content active">
+                <h2>About Me</h2>
                 <p>
-                    MCP server + VS Code extension enabling structured tooling integration 
-                    for cross-service developer workflows.
+                    I am a Software Engineer II at Microsoft with expertise in building secure, scalable and
+                    high‑performance backend systems.  
+                    I work across cloud-native services, CI/CD, distributed systems, and cross‑architecture
+                    enablement (ARM64/ARM64EC).
+                    <br><br>
+                    I value reliability, performance, and developer productivity — shipping meaningful,
+                    system‑level improvements at scale.
                 </p>
-                <a href="#" class="proj-link">View</a>
             </div>
 
-            <div class="project-card">
-                <h3>Student–Alumni Portal</h3>
+            <!-- EXPERIENCE -->
+            <div id="experience" class="content">
+                <h2>Experience</h2>
+
+                <div class="card">
+                    <h3>Microsoft — Software Engineer II</h3>
+                    <p class="duration">Aug 2025 – Present</p>
+                    <ul>
+                        <li>Improved Office Web boot latency by ~200ms for millions of users.</li>
+                        <li>Re‑architected test infra → 5× faster startup.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Microsoft — Software Engineer I</h3>
+                    <p class="duration">Aug 2022 – Aug 2025</p>
+                    <ul>
+                        <li>Reduced CI/CD pipeline time by ~60%.</li>
+                        <li>Led .NET Framework → .NET Core migration.</li>
+                        <li>Enabled ARM64/ARM64EC across Office components.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PROJECTS -->
+            <div id="projects" class="content">
+                <h2>Projects</h2>
+
+                <div class="project-list">
+
+                    <div class="p-card">
+                        <h3>WacTrack MCP Server</h3>
+                        <p>VS Code extension enabling structured tooling integration.</p>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=WESTDevX.wactrack-mcp-server"
+                            target="_blank">View</a>
+                    </div>
+
+                    <div class="p-card">
+                        <h3>Student–Alumni Portal</h3>
+                        <p>Full‑stack Q&A platform for 500+ users.</p>
+                        <a href="https://github.com/gdscnitp/freshers-portal-app" target="_blank">GitHub</a>
+                    </div>
+
+                    <div class="p-card">
+                        <h3>Social Media App</h3>
+                        <p>Android app with real‑time messaging & authentication.</p>
+                        <a href="https://github.com/Anni1123/SocialMediaApp" target="_blank">GitHub</a>
+                    </div>
+
+                    <div class="p-card">
+                        <h3>To‑Do App</h3>
+                        <p>Simple task manager with local storage.</p>
+                        <a href="https://github.com/Anni1123/ToDoApp" target="_blank">GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CONTACT -->
+            <div id="contact" class="content">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:annik.ug18.cs@nitp.ac.in">annik.ug18.cs@nitp.ac.in</a></p>
                 <p>
-                    Full‑stack platform supporting 500+ users with real‑time updates & secure authentication.
+                    <a href="https://www.linkedin.com/in/anni-kumari-588508188/" target="_blank">LinkedIn</a> •
+                    <a href="https://github.com/Anni1123" target="_blank">GitHub</a>
                 </p>
-                <a href="#" class="proj-link">View</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Social Media App</h3>
-                <p>Android-based app featuring real‑time messaging & user authentication.</p>
-                <a href="https://github.com/Anni1123/SocialMediaApp" class="proj-link" target="_blank">GitHub</a>
-            </div>
-
-            <div class="project-card">
-                <h3>To‑Do App</h3>
-                <p>Lightweight and clean task manager with local storage support.</p>
-                <a href="https://github.com/Anni1123/ToDoApp" class="proj-link" target="_blank">GitHub</a>
             </div>
 
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-        <h2 class="section-title">Contact</h2>
-        <p>Email: <a href="mailto:annik.ug18.cs@nitp.ac.in">annik.ug18.cs@nitp.ac.in</a></p>
-        <p>
-            <a href="https://www.linkedin.com/in/anni-kumari-588508188/" target="_blank">LinkedIn</a> •
-            <a href="https://github.com/Anni1123" target="_blank">GitHub</a>
-        </p>
-    </section>
-
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 Anni Kumari</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
